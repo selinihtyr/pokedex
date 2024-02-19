@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/services/pokedex_api.dart';
-import 'package:pokedex/view/homepage.dart';
+import 'package:pokedex/pages/homepage.dart';
 
 void main() {
   runApp(const MyApp());
