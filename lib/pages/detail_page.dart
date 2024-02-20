@@ -35,19 +35,21 @@ class DetailPage extends StatelessWidget {
           Expanded(
               child: Stack(children: [
             Positioned(
+                right: 0,
+                top: 0,
                 child: Image.asset(
                   Constants.pokeball,
                   height: 0.15.sh,
                   fit: BoxFit.fitHeight,
-                ),
-                right: 0,
-                top: 0),
+                )),
                 Positioned(
                     bottom: 0,left: 0,right: 0,top: 0.12.sh,
                     child: PokeInformation(pokemon: pokemon)),
                 Align(
                   alignment: Alignment.topCenter,
-                  child: CachedNetworkImage(imageUrl: pokemon.img ?? "", height: 0.25.sh, fit: BoxFit.fitHeight,),
+                  child: Hero(
+                      tag: pokemon.id!,
+                      child: CachedNetworkImage(imageUrl: pokemon.img ?? "", height: 0.25.sh, fit: BoxFit.fitHeight,)),
                 )
           ]))
         ]),
