@@ -14,4 +14,19 @@ class Constants {
       fontWeight: FontWeight.bold,
     );
   }
+
+  static TextStyle getPokemonNameTextStyle() {
+    return const TextStyle(
+      color: Colors.white,
+      fontSize: 30,
+      fontWeight: FontWeight.bold,
+    );
+  }
+
+  static TextStyle getTypeChipTextStyle() {
+    return const TextStyle(
+      color: Colors.white,
+      fontSize: 20,
+    );
+  }
 }
