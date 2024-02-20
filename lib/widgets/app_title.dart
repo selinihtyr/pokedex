@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:pokedex/constants/constants.dart';
 
 class AppTitle extends StatefulWidget {
   AppTitle({super.key});
@@ -9,19 +11,24 @@ class AppTitle extends StatefulWidget {
 }
 
 class _AppTitleState extends State<AppTitle> {
-  String pokeImgUrl = "images/pokeball.png";
+  String pokeImgUrl = Constants.pokeball;
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        const Align(alignment: Alignment.topLeft, child: Text("Pokedex")),
+        Align(
+            alignment: Alignment.topLeft,
+            child: Text(
+              Constants.title,
+              style: Constants.getTitleTextStyle(),
+            )),
         Align(
             alignment: Alignment.topRight,
             child: Image.asset(
               pokeImgUrl,
-              width: 100,
-              height: 100,
+              width: 100.w,
+              height: 100.h,
             ))
       ],
     );
