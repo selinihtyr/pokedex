@@ -16,10 +16,25 @@ class Constants {
     );
   }
 
+  static getPokeInfoTextStyle() {
+    return TextStyle(
+      color: Colors.black,
+      fontSize: _calculateFontSize(16),
+    );
+  }
+
+  static getPokeInfoLabelStyle() {
+    return TextStyle(
+      color: Colors.black,
+      fontSize: _calculateFontSize(20),
+      fontWeight: FontWeight.bold,
+    );
+  }
+
   static TextStyle getPokemonNameTextStyle() {
     return TextStyle(
       color: Colors.white,
-      fontSize: _calculateFontSize(30),
+      fontSize: _calculateFontSize(24),
       fontWeight: FontWeight.bold,
     );
   }
@@ -35,7 +50,7 @@ class Constants {
     if (ScreenUtil().orientation == Orientation.portrait) {
       return size.sp;
     } else {
-      return (size * 1.5).sp;
+      return (size * 0.75).sp;
     }
   }
 }
