@@ -29,3 +29,9 @@ This is a Pokedex application built with Flutter.
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+
+
+https://github.com/selinihtyr/pokedex/assets/122679970/9702a28e-b080-4bc3-9e7c-149850070a82
+
+
