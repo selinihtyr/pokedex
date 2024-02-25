@@ -11,6 +11,7 @@ This is a Pokedex application built with Flutter.
 - Google Fonts: The google_fonts package for Flutter allows you to easily use any of the 977 fonts (and their variants) from fonts.google.com in your Flutter app.
 - Cached Network Image: A flutter library to show images from the internet and keep them in the cache directory.
 - Android Studio: The IDE where the project was developed.
+- Atomic Commits: The project follows the practice of making atomic commits. Each commit in this project represents a single, self-contained change.
 
 ## Setup
 
